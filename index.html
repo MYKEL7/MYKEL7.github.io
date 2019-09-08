@@ -1,28 +1,173 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-<head>
-<title> TASK 2 </title>
-<style type="text/css">
-body {background:#663399;}
-	  
-#inner{font-family: Verdana, Geneva, sans-serif;
-	font-size: 100%;
-	width: 80%;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 2.5% 2.5% 0;
-	background: white;
-	line-height: 1.8;}
-	   
-img {position:absolute;
-     left:900px;
-	 top:50px}
-	 
-table{border: 3px solid #663399; color:white} 
-tr   {background-color:#663399;} 
-
-form {margin-left:100px;
+    <meta charset="UTF-8">
+    <head>
+    <title>ONYEME MICHAEL</title>
+    </head> 
+    <style>
+    * {
+    box-sizing: border-box;
+    transition: 0.35s ease;
+  }
+  .rela-block {
+    display: block;
+    position: relative;
+    margin: auto;
+    top: ;
+    left: ;
+    right: ;
+    bottom: ;
+  }
+  .abs-center {
+    display: false;
+    position: absolute;
+    margin: false;
+    top: 50%;
+    left: 50%;
+    right: false;
+    bottom: false;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+    width: 88%;
+  }
+  body {
+    font-family: 'Bookman Old Style';
+    font-size: 18px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    line-height: 28px;
+    background: url("http://kingofwallpapers.com/leaves/leaves-016.jpg") right no-repeat;
+    background-size: cover;
+  }
+  body:before {
+    content: "";
+    display: false;
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:lightblue;
+  }
+  .caps {
+    text-transform: uppercase;
+  }
+  .justified {
+    text-align: justify;
+  }
+  p.light {
+    color: #777;
+  }
+  
+  .page {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+    background-color: #fff;
+    box-shadow: 6px 10px 28px 0px rgba(0,0,0,0.4);
+  }
+  .top-bar {
+    height: 220px;
+    background-color: #848484;
+    color: #fff;
+  }
+  .name {
+    display: false;
+    position: absolute;
+    margin: false;
+    top: false;
+    left: calc(350px + 5%);
+    right: 0;
+    bottom: 0;
+    height: 120px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 58px;
+    letter-spacing: 8px;
+    font-weight: 100;
+    line-height: 60px;
+  }
+  .name div {
+    width: 94%;
+  }
+  .side-bar {
+    display: false;
+    position: absolute;
+    margin: false;
+    top: 60px;
+    left: 5%;
+    right: false;
+    bottom: 0;
+    width: 350px;
+    background-color: lightgoldenrodyellow;
+    padding: 320px 30px 50px;
+  }
+  .mugshot {
+    display: false;
+    position: absolute;
+    margin: false;
+    top: 50px;
+    left:-75px;
+    right: false;
+    bottom: false;
+    height: 210px;
+    width: 210px;
+  }
+.side-header {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    line-height: 28px;
+    margin: 60px auto 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #888;
+  }
+  .list-thing {
+    padding-left: 25px;
+    margin-bottom: 10px;
+  }
+  .content-container {
+    margin-right: 0;
+    width: calc(95% - 350px);
+    padding: 25px 40px 50px;
+  }
+  .content-container > * {
+    margin: 0 auto 25px;
+  }
+  .content-container > h3 {
+    margin: 0 auto 5px;
+  }
+  .content-container > p.long-margin {
+    margin: 0 auto 50px;
+  }
+  
+  .greyed {
+    background-color: #ddd;
+    width: 100%;
+    max-width: 580px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    letter-spacing: 6px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  @media screen and (max-width: 1150px) {
+    .name {
+      color: #fff;
+      font-family: 'Raleway';
+      font-size: 38px;
+      letter-spacing: 6px;
+      font-weight: 100;
+      line-height: 48px;
+    }
+  }    
+        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Bookman Old Style"}
+        
+    form {margin-left:100px;
       margin-top:60px;
       transition: all 4s ease-in-out;}
 	  
@@ -32,7 +177,7 @@ form {margin-left:100px;
 	  border:none;
 	  outline:none;
 	  border-bottom:1px solid gray;
-	  color:#fff;
+	  color:black;
 	  font-size:18px;
 	  margin-bottom:16px;}
 	  
@@ -40,44 +185,57 @@ input {height:45px;}
 
 form .submit
        {background:#ff5722;
-        order-color:transparent;
+        border-color:transparent;
         color:#fff;
         font-size:20px;
 		font-weight:bold;
 		letter-spacing:2px;
 		height:50px;}
-h3  {color:#fff;
+h3  {color:black;
      text-transform:uppercase;
      transition:all 4s ease-in-out;
 	 font-family: Verdana, Geneva, sans-serif;}	 
-		
-</style>
-</head>
 
+    </style>
 <body>
-<div id="inner">
-<h1>ONYEME, EKENE MICHAEL  </h1>  <img src="https://res.cloudinary.com/dy18y8k1e/image/upload/v1566655374/MYXJ_20171109111321_fast_w510ab.jpg" alt="image" height="170" width="170">
-Address: 27b Layinka street Apapa Lagos.<br> 	 
-E-mail: onyememykel@gmail.com<br>      
-Telephone: 08182515388	 	 
-<hr>	 	 	 	  	
- 
-<h2>CARRER OBJECTIVE</h2>	
-To work in a reputable organization that value excellence by promoting top quality and professional services towards the realisation of the goals and objective of the organisation. 
-<hr> 	 	 	  
-<h2>PERSONAL PROFILE</h2> 
-<ul>
+<div class="rela-block page">
+    <div class="rela-block top-bar">
+        <div class="caps name"><div class="abs-center">ONYEME MICHAEL</div></div>
+    </div>
+    <div class="side-bar">
+        <div class="mugshot">
+            <div>
+                <svg width="500" height="250">
+                    <defs>
+                        <clipPath id="circleView">
+                            <circle cx="250" cy="100" r="100" fill="#FFFFFF" />            
+                        </clipPath>
+                    </defs>
+                    <image width="500" height="250" xlink:href="https://res.cloudinary.com/dy18y8k1e/image/upload/v1566655374/MYXJ_20171109111321_fast_w510ab.jpg" clip-path="url(#circleView)" />
+                </svg>
+            </div>
+        </div>
+        <p class="rela-block caps side-header">Objective</p>
+        <p>Looking to learn, relearn, collaborate, and deliver excellent products and services within an innovative, transparent, and efficient organization with inclusive values.</p>
+        <p class="rela-block caps side-header">Contact</p>
+        <p class="rela-block list-thing">Address:<br>27b Layinka Street Apapa Lagos</p>
+        <p class="rela-block list-thing">Mobile:<br>08182515388</p>
+        <p class="rela-block list-thing">E-mail:<br>onyememykel@gmail.com</p>
+    </div>
+    <div class="rela-block content-container">
+        <div class="rela-block separator"></div>
+        <div class="rela-block caps greyed">Professional Profile</div>
+        <ul class="justified">
     <li>Ability to work with team to achieve the organizational goals </li>
     <li>Effective time management, planning and organisation skill </li>
     <li>Excellent communication and self-correspondence skills </li>
     <li>Dedicated with strong interpersonal skills </li>
     <li>Ability to perform in stressful environment with multiple tasks and critical decision making </li>
     <li>Ability and willingness to learn more while working on the job</li> 
-</ul>
-<hr>
-
-<h2>EDUCATION</h2> 
-<table border="1" cellpadding="10">	   
+          </ul>
+        
+    <p class="rela-block caps greyed">Education</p>
+      <table border="1" cellpadding="10">	   
 <tr>
       <th> School </th>	   
 	  <th>Qualification</th>	          
@@ -105,20 +263,21 @@ To work in a reputable organization that value excellence by promoting top quali
 	 <td>Primary School Leaving Certificate</td>     	            
 	 <td>2000-2005  </td>
 </table> 
-<hr> 	
-	
-<h2>TOOL PROFICIENCY</h2>  	 
-Desktop Publishing (Word, PowerPoint, Excel,CorelDraw etc.)<br>
-HTML ,CSS &amp; JavaScript   
-    
-    
- <hr>
- 
-<h2>INTERESTS</h2> 
-Reading, Teaching, Solving problems, and Meeting people. 
-</div>
-
-<form>
+        <p  class="rela-block caps greyed">Skills</p>
+        <ul>
+        <li>HTML</li>
+         <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>    
+         <div class="rela-block caps greyed">TRAINING</div>
+        <ul>
+        <li>YOUCODE: Frontend Developer</li>
+        <li>MASORA COMPUTER COLLEDGE: Desktop Publishing</li>
+        <li>GOOGLE: Making Sense of Data</li>
+        </ul>    
+         <div class="rela-block caps greyed">INTERESTS</div>
+        Reading, Teaching, Solving problems, and Meeting people.
+        <form method="post" action="https://formspree.io/onyememykel@gmail.com">
 <h3>CONTACT MICHAEL</h3>
     <input name="name" type="text" class="form-control" placeholder="Your Name" required ><br>
 	<input name="name" type="email" class="form-control" placeholder="Your Email" required ><br>
@@ -127,8 +286,13 @@ Reading, Teaching, Solving problems, and Meeting people.
 
 	<input type="submit" class="form-control submit"  value="SEND MESSAGE">
 	 
-</form>
-
+</form >
+<footer>        
+<p>&copy;2019 0NYEME MICHAEL.All rights reserved.
+| follow me on Twitter! <a href="https://twitter.com/mykel" title="Follow me on Twitter" target="_blank">@MichaelOnyeme</a></p>
+</footer>    
+    </div>
+</div>
+    
 </body>
-
-</html> 
+</html>
